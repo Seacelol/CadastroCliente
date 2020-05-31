@@ -79,7 +79,7 @@ function criarTabela () {
     
     let registros = localStorage.getItem("salvo") ? JSON.parse(localStorage.getItem("salvo")) : [];
     let divRegistro = document.getElementById("divRegistro")
-
+    
     for(let i in registros){
         let trId = document.createElement("tr");
         let trNome = document.createElement("tr");
