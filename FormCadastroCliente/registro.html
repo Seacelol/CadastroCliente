@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dados armazenados</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <section class="form-cadastro">
+  <body onload="criarTabela()">
+    <h1>Dados armazenados</h1>
+      <div class="formulario">
+        <form name="formRegistro" id="formRegistro">
+          <div id="divRegistro">
+          </div>
+          <div>
+            <label>Informe o Id do que deseja excluir</label>
+            <input type="number" name="exclusao" id="exclusao" />
+            <button type="button" class="btn" onclick="apagar()">Excluir</button>
+            <label>_______________________________________________________________________</label>
+          </div>
+          <button type="button" class="btn" onclick="retornar()">Retornar</button>
+        </form>
+      </div>
+    </section>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Formulario de Cadastro de Clientes</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <section class="form-cadastro">
+      <h1>Informe seus dados</h1>
+      <div class="formulario">
+        <form name="formCadastro" id="formCadastro">
+            <div class="input-block">
+                <label>Nome</label>
+                <input type="text" name="nome" id="nome" />
+            </div>
+            <div class="input-block">
+                <label>Email</label>
+                <input type="email" name="email" id="email" />
+            </div>
+            <div class="input-block">
+                <label>Telefone</label>
+                <input type="number" name="telefone" id="telefone" maxlength="11" />
+            </div>
+            <div class="input-block">
+                <label>CEP</label>
+                <input type="number" name="cep" id="CEP" />
+            </div>
+            <div class="input-block">
+                <label>Logradouro</label>
+                <input type="text" name="logradouro" id="logradouro" />
+            </div>
+            <div class="input-block">
+                <label>Número</label>
+                <input type="number" name="numero" id="numero" />
+            </div>
+            <div class="input-block">
+                <label>Bairro</label>
+                <input type="text" name="bairro" id="bairro" />
+            </div>
+            <div class="input-block">
+                <label>Cidade</label>
+                <input type="text" name="cidade" id="cidade" />
+            </div>
+            <div class="input-block">
+                <label>Estado</label>
+                <input type="text" name="estado" id="estado" />
+            </div>
+          <button type="button" class="btn" onclick="validar_formCadastro()">Cadastrar</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
