@@ -15,7 +15,7 @@ function validar_formCadastro () {
         formCadastro.nome.focus();
         return false;
     }
-        if (email == "") {
+    if (email == "") {
         alert("Campo E-mail é obrigatorio");
         formCadastro.email.focus();
         return false;
@@ -71,7 +71,7 @@ function validar_formCadastro () {
     let storageAtual = localStorage.getItem("salvo") ? JSON.parse(localStorage.getItem("salvo")) : [];
     storageAtual.push(dados);
     localStorage.setItem("salvo", JSON.stringify(storageAtual));
-    window.location.href="registro.html"
+    window.location.href="index.html"
 
 }
 
@@ -133,6 +133,12 @@ function apagar () {
     excluir.splice(exclusao, 1)
     localStorage.setItem("salvo", JSON.stringify(excluir));
     window.location.href="registro.html"
+}
+
+function cadastros() {
+
+    window.location.href="registro.html"
+
 }
 
 function retornar() {
